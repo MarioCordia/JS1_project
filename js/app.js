@@ -3,9 +3,6 @@ const egresos = [new Egreso("Renta", 900), new Egreso("Internet", 400)];
 
 const d = document;
 
-/* let ingresos = [900, 400];
-let egresos = [9000, 400]; */
-
 const totalIngresos = () => {
   let totalIngreso = 0;
   for (let ingreso of ingresos) {
@@ -46,11 +43,6 @@ const cargarCabecero = () => {
     formatoPorcentaje(porcentajeEgreso);
   d.querySelector("#ingresos").innerHTML = formatoMoneda(totalIngresos());
   d.querySelector("#egresos").innerHTML = formatoMoneda(totalEgresos());
-
-  /* console.log(formatoMoneda(presupuesto));
-  console.log(formatoPorcentaje(porcentajeEgreso));
-  console.log(formatoMoneda(totalIngresos()));
-  console.log(formatoMoneda(totalEgresos())); */
 };
 
 function cargarApp() {
